@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Raleway:ital,wght@0,500;0,700;1,400&display=swap');
+
+
+/* CSS Reset */
+* 
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+p, span, a, label, input
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper
+{
+    width: 100%;
+    margin: auto;
+}
+
+/* (1) Header Area */
+.nav
+{
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: 1em auto;
+    overflow: auto;
+}
+
+.nav h1
+{
+    /* border: 2px solid green; */
+    width: 50%;
+    float: left;
+    text-transform: uppercase;
+    
+}
+
+.nav h1 a
+{
+    text-decoration: none;
+    color: #96746b;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav ul
+{
+    /* border: 2px solid blue; */
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-top: 1em;
+}
+
+.nav ul li
+{
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    margin-left: 1em;
+    
+}
+
+.nav ul li a
+{
+    /* 1)remove U line */
+    text-decoration: none;
+
+    /* 2)change the color to #312a26 */
+    color: #312a26;
+
+    /* 3)set the font to bold */
+    font-weight: 700;
+
+}
+/* End of (1) */
+
+/* （2） Banner Area */
+.banner
+{
+    /* border: 2px solid red; */
+    background-image: url('../images/banner-bg.jpg');
+    height: 670px;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}
+
+.banner-text
+{
+    /* border: 2px solid yellow; */
+    width: 45%;
+    position: absolute;
+    left: 7.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.banner-text h2
+{
+    /* 1.color is #c7a17a  2nd= #96746b */
+    color: #c7a17a;
+    
+    /* 2.size of the font is 4times the current font size */
+    font-size: 4em;
+
+    /* 3.make it all capital/big letters */
+    text-transform: uppercase;
+}   
+
+.banner-text h2 span
+{
+    font-family: 'Oswald', sans-serif;
+    color: #96746b;
+}
+
+.banner-text p
+{
+    /* change the color white */
+    color: white;
+}
+
+.banner-text a
+{
+    /* remove the U line */
+    text-decoration: none;
+    
+    /* set the display same with nav ul li */
+    display: inline-block;
+
+    /* put space around it(inside the border) of 1em */
+    padding: 1em;
+
+    /* color of the background is #312a26 */
+    background-color: #312a26;
+    color: white;
+
+    /* make the font bold */
+    font-weight: 700;
+
+    /* put space on top only(outside the border) of 1em */
+    margin-top: 1em;
+
+}
+/* End of (2) */
+
+/* (3) Ads Area */
+
+.ads
+{
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: 4em auto;
+    overflow: auto;
+}
+
+.ads-items
+{
+    /* border: 2px solid yellowgreen; */
+    width: 48.5%;
+    float: left;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3%;
+    position: relative;
+}
+
+.ads-item1
+{
+    background-image: url('../images/ads-img1.jpg');
+    margin-right: 3%;
+}
+
+.ads-item2
+{
+    background-image: url('../images/ads-img2.jpg');
+}
+
+.ads-text
+{
+    /* border: 2px solid yellowgreen; */
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.ads-text h3
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1.2em;
+    text-shadow: 3px 3px 6px #2e2631
+    
+}
+
+.ads-text a
+{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px #2e2631;
+    display: inline-block;
+    margin-top: 1em;
+}
+/* End of (3) */
+
+/* (4) Merchandise Area */
+.merch
+{
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: 4em auto;
+}
+
+.section-header
+{
+    /* border: 2px solid blue; */
+    text-align: center;
+}
+
+.section-header span
+{
+    /* 1) change the color to #c7a17a */
+    color: #c7a17a;
+
+    /* 2) make the lettters slanted */
+    font-style: italic ;
+
+    /* 3) set the font to medium */
+    font-weight: 500;
+}
+
+
+.section-header h2
+{
+    /* 1) make it all capital/big letters */
+    text-transform: uppercase;
+
+    /* 2) change the color to #312a26 */
+    color: #312a26;
+
+}
+
+.section-header hr
+{
+    background-color: #c7a17a;
+    height: 2px;
+    width: 25%;
+    margin: auto;
+}
+
+.merch-gallery
+{
+    /* border: 2px solid green; */
+    margin-top: 2em;
+    overflow: auto;
+
+}
+
+.merch-items
+{
+    /* border: 2px solid yellow; */
+    width: 24.25%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.merch-items:nth-child(4),
+.merch-items:nth-child(8)
+{
+    margin-right: 0;
+}
+
+.merch-items img
+{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.merch-items span
+{
+    font-size: 1.8em;
+}
+/* End of (4) */
+
+/* (5) Discount Area */
+.discount
+{
+    /* border: 2px solid red;     */
+    width: 85%;
+    margin: 4em auto;
+    background-image: url(../images/discount-img.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.discount-text
+{
+    text-align: center;
+    width: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.discount-text span
+{
+    /* 1)color to white-space */
+    color: white;
+
+    /* make letter italic */
+    font-style: italic;
+
+    /* put text shadow same with ads-text h3 */
+    text-shadow: 3px 3px 6px #2e2631
+}
+
+.discount-text h2
+{
+    /* 1) set fontsize 2em */
+    font-size: 2em;
+
+    /* chage white */
+    color: white;
+
+    /* all big capital */
+    text-transform: uppercase;
+
+    /* testshadow */
+    text-shadow: 3px 3px 6px #2e2631
+}
+
+.discount-text a
+{
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.5);
+    color: #312a26;
+    font-weight: 700;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+/* (7) Ads Area */
+.ads-item3
+{
+    background-image: url('../images/ads-img3.jpg');
+    margin-right: 3%;
+}
+
+.ads-item4
+{
+    background-image: url('../images/ads-img4.jpg');
+}
+
+.ads-item5
+{
+    background-image: url('../images/ads-img5.jpg');
+    margin-right: 3%;
+}
+
+.ads-item6
+{
+    background-image: url('../images/ads-img6.jpg');
+}
+/* End of (7) */
+
+/* (8) Reservation Area */
+.reservation
+{
+    width: 85%;
+    margin: 4em auto;
+}
+
+form
+{
+    overflow: auto;
+}
+
+.form-group
+{
+    width: 49.5%;
+    float: left;
+    margin-top: 2em;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    height: 650px;
+    padding: 2em;
+}
+
+.form1 
+{
+    margin-right: 1%;
+}
+
+form label,
+form input,
+form select,
+form textarea
+{
+    display: inline-block;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+form label
+{
+    padding: 0;
+    margin-bottom: 0.3em;
+    font-weight: 700;
+}
+
+form p
+{
+    font-weight: 700;
+    text-align: center;
+    margin: 1.0em;
+}
+
+form h3
+{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.res-time,
+.res-agreement
+{
+    text-align: center;
+}
+
+.res-time *,
+.res-agreement *
+{
+    width: auto;    
+}
+
+form h3::after
+{
+    content: "";
+    background-image: url('../images/reservation-cards.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+}
+
+.send
+{
+    background-color: #c7a17a;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* End of (8) */
+
+/* (9)Footer Area */
+.footer
+{
+    /* border: 2px solid red;     */
+    background-image: url('../images/footer-img.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.footer-content
+{
+    /* border: 2px solid yellow; */
+    width: 85%;
+    margin: auto;
+    overflow: auto;
+}
+
+.footer-widget
+{
+    /* border: 2px solid green; */
+    width: 24.25%;
+    float: left;
+    margin-right: 1%;
+    font-weight: normal;
+}
+
+.footer-widget:nth-child(4)
+{
+    margin-right: 0;
+}
+
+.footer-widget h3
+{
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.footer-widget h4
+{
+    color: white;
+}
+
+.footer-widget th,
+.footer-widget td
+{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer-content p
+{
+    color: #c7a17a;
+}
+
+.footer-widget input
+{
+    width: auto;
+    float: left;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 0.2em;
+}
+
+.search
+{
+    background-color: #c7a17a;
+}
+/* End of (9) */
+
+/* (10) Social Footer Area */
+.social-footer
+{
+    background-color: #19100f;
+    color: white;
+    overflow: auto;
+}
+
+.social-widget
+{
+    /* border: 2px solid yellowgreen; */
+    width: 33.33%;
+    float: left;
+    padding: 1em 7.5%;
+    text-align: center;
+}
+
+.social-widget h3
+{
+    text-transform: uppercase;
+}
+
+.social-widget img
+{
+    width: 1.5em;
+}
+
